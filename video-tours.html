@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan School - Video Tours</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #2c5aa0;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #2c5aa0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p.description {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 40px;
+    }
+
+    /* Video List */
+    .video-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+    }
+
+    .video-box {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-box iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .video-box h3 {
+      font-size: 18px;
+      color: #2c5aa0;
+      margin: 12px 0 5px 0;
+      text-align: center;
+    }
+
+    .video-box p {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* YouTube Channel */
+    .youtube-channel {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .youtube-channel a {
+      color: #00bfff;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .youtube-channel a:hover {
+      color: #1e3d70;
+    }
+
+    /* Footer */
+    .footer {
+      background: #2c5aa0;
+      color: #fff;
+      padding: 50px 20px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-col h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-col p, 
+    .footer-col ul, 
+    .footer-col a {
+      font-size: 14px;
+      color: #eee;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a:hover,
+    .footer-col a:hover {
+      color: #ffd700;
+    }
+
+    .youtube-link {
+      color: #00bfff;
+      font-weight: bold;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how-to-copy.html">How To Copy Rehan School</a>
+    <a href="video-tours.html">Video Tours</a>
+    <a href="facilitators.html">Facilitators</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="videos.html">Videos</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+
+<!-- Main Content -->
+<div class="container">
+  <h1>Video Tours</h1>
+  <p class="description">
+    We invite you to explore the dynamic learning environment and state-of-the-art facilities of Rehan School’s Korangi campus through our comprehensive collection of virtual tours. These videos provide an immersive view into our classrooms, laboratories, sports areas, and more, offering a detailed glimpse into the daily life at our campus.
+    <br><br>
+    Whether you are a prospective student, a parent, or simply interested in our educational community, these tours will give you a thorough understanding of what it means to be part of Rehan School. Witness our commitment to academic excellence and personal growth, and see how our dedicated faculty and vibrant student body contribute to a thriving educational experience.
+    <br><br>
+    We are proud to showcase the essence of the Rehan School Korangi campus and look forward to sharing our journey with you.
+  </p>
+
+  <div class="video-list" style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+    <div class="video-box" style="flex:1; min-width:300px; max-width:500px; text-align:center;">
+      <iframe width="100%" height="280" src="https://www.youtube.com/embed/qqQHQVP39Hk" title="Shannon Longren visiting Rehan School Korangi campus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3>Shannon Longren visiting Rehan School Korangi campus</h3>
+    </div>
+
+    <div class="video-box" style="flex:1; min-width:300px; max-width:500px; text-align:center;">
+      <iframe width="100%" height="280" src="https://www.youtube.com/embed/Bf_sIG62mlQ" title="Dan Ulin visiting Rehan School Korangi campus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3>Dan Ulin visiting Rehan School Korangi campus</h3>
+    </div>
+
+    <div class="video-box" style="flex:1; min-width:300px; max-width:500px; text-align:center;">
+      <iframe width="100%" height="280" src="https://www.youtube.com/embed/iaUmTdBsWMU" title="Rehan Allahwala Takes You To Rehan School Korangi Campus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3>Rehan Allahwala Takes You To Rehan School Korangi Campus</h3>
+    </div>
+  </div>
+
+  <div class="youtube-channel" style="text-align:center; margin-top:30px;">
+    <p>Check the latest videos, tours, and happenings on the Rehan School Korangi campus YouTube channel:</p>
+    <a href="https://www.youtube.com/@rehanschoolKorangicampus" target="_blank">Rehan School YouTube</a>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Mission & Vision</h3>
+        <p>
+          Our mission is to educate and mentor the next generation of innovative leaders within 10 years, under the direct supervision of Rehan Allahwala. We aim to equip our students with the academic foundation and real-world skills to become not only future Nobel laureate contenders but also successful entrepreneurs who can tackle the world’s most pressing issues.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Facilitators</a></li>
+          <li><a href="#">Curriculum</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get In Touch</h3>
+        <p>R554+WF9, Sector 50 C Korangi, Karachi</p>
+        <p>Opp PAF Falcon, KAECHS Block 6, Shaheed e Millat road, Khi.</p>
+        <p>Seri Chowk, Near Arqam School, Bank Colony Phulgran, Barakahu, Isb.</p>
+        <p><strong>UAN:</strong> +92 304 111 6044</p>
+        <p><strong>Email:</strong> info@rehanschool.net</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Subscribe to our YouTube channels</h3>
+        <p>
+          Korangi campus: 
+          <a href="https://YouTube.com/@rehanschoolKorangicampus" target="_blank" class="youtube-link">@rehanschoolKorangicampus</a>
+        </p>
+        <p>
+          Munawwar campus: 
+          <a href="https://youtube.com/@rehanschoolmunawwarcampus" target="_blank" class="youtube-link">@rehanschoolmunawwarcampus</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Rehan School. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
