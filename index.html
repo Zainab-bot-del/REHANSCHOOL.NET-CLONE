@@ -1,607 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rehan School - Quality Education for All</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan School - Home</title>
+  <style>
+  
+  /* Top Navigation Row */
+.top-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
 
-        :root {
-            --primary: #1a4b8c;
-            --secondary: #f37f20;
-            --light: #f5f5f5;
-            --dark: #333;
-            --accent: #e91e63;
-        }
+.top-text a {
+  padding: 5px 12px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  color: #2c5aa0;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
 
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+.top-text a:hover {
+  background: #2c5aa0;
+  color: white;
+} 
 
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, var(--primary), #2a5c9c);
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      text-align: center;
+    }
 
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 5%;
-        }
+    .container {
+      width: 95%;
+      margin: 0 auto;
+      padding: 30px 10px;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+    .logo img {
+      height: 120px;
+      width: auto;
+      margin-bottom: 10px;
+    }
 
-        .logo h1 {
-            font-size: 1.8rem;
-            margin-left: 10px;
-        }
+    h1 {
+      font-size: 34px;
+      color: #2c5aa0;
+      margin-bottom: 5px;
+    }
 
-        .logo-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-        }
+    p.tagline {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
 
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+    /* Top text row */
+    .top-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #2c5aa0;
+      margin-bottom: 40px;
+    }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
+    .top-text span {
+      padding: 5px 12px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
 
-        nav ul li {
-            margin-left: 1.5rem;
-        }
+    /* Section title */
+    h2 {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #2c5aa0;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem;
-            transition: color 0.3s;
-        }
+    /* Features Grid */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+    }
 
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
+    .feature-box {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 5rem 1rem;
-        }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+    .feature-box h3 {
+      font-size: 18px;
+      color: #2c5aa0;
+      margin-bottom: 10px;
+    }
 
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
+    .feature-box p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
 
-        .btn {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
+    /* About Us Section */
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 60px;
+      text-align: left;
+    }
 
-        .btn:hover {
-            background: #e2720b;
-        }
+    .about-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-        /* Features Section */
-        .features {
-            padding: 4rem 5%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+    .about-image img {
+      width: 280px;
+      height: 280px;
+      border-radius: 20px; /* Square with rounded corners */
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
+    .about-text {
+      flex: 2;
+    }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
+    .about-text h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #2c5aa0;
+    }
 
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
+    .about-text p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
 
-        /* News Section */
-        .news {
-            background: var(--light);
-            padding: 4rem 5%;
-        }
+    .btn {
+      display: inline-block;
+      background-color: #2c5aa0;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--primary);
-            position: relative;
-            padding-bottom: 1rem;
-        }
+    .btn:hover {
+      background-color: #1e3d6f;
+    }
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: var(--secondary);
-        }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text {
+        text-align: center;
+      }
+    }
 
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+    @media (max-width: 600px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
 
-        .news-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .news-img {
-            height: 200px;
-            background-color: #ddd;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .news-content {
-            padding: 1.5rem;
-        }
-
-        .news-date {
-            color: var(--secondary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 3rem 5%;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .footer-section h3 {
-            color: var(--secondary);
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-
-        .footer-contact p {
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .footer-contact i {
-            margin-right: 10px;
-            color: var(--secondary);
-        }
-
-        .footer-links a {
-            display: block;
-            color: #ddd;
-            margin-bottom: 0.5rem;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--secondary);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top: 1px solid #555;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-toggle {
-                display: block;
-            }
-
-            nav ul {
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: var(--primary);
-                display: none;
-                padding: 1rem 0;
-            }
-
-            nav ul.show {
-                display: flex;
-            }
-
-            nav ul li {
-                margin: 0;
-                text-align: center;
-                padding: 0.5rem 0;
-            }
-
-            .hero h2 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-
-        /* Page Content Styles */
-        .page-content {
-            padding: 3rem 5%;
-            min-height: 60vh;
-        }
-
-        .page-content h2 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .page-content p {
-            margin-bottom: 1rem;
-        }
-
-        /* Hidden class for page navigation */
-        .page {
-            display: none;
-        }
-
-        .active-page {
-            display: block;
-        }
-    </style>
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #2c5aa0;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-top">
-            <div class="logo">
-                <i class="fas fa-graduation-cap logo-icon"></i>
-                <h1>Rehan School</h1>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="#" class="nav-link" data-page="home">Home</a></li>
-                    <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
-                    <li><a href="#" class="nav-link" data-page="academics">Academics</a></li>
-                    <li><a href="#" class="nav-link" data-page="admissions">Admissions</a></li>
-                    <li><a href="#" class="nav-link" data-page="campus">Campus Life</a></li>
-                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="container">
+    <!-- Logo and Title -->
+    <div class="logo">
+      <img src="images__2_.png" alt="Rehan School Logo">
+    </div>
+    <h1>Rehan School</h1>
+    <p class="tagline">Excellence in Education</p>
 
-    <!-- Home Page -->
-    <div id="home" class="page active-page">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h2>Welcome to Rehan School</h2>
-            <p>Providing quality education and nurturing future leaders since 1995. Our dedicated faculty and state-of-the-art facilities create an environment where students thrive.</p>
-            <a href="#" class="btn" data-page="admissions">Apply Now</a>
-        </section>
+<!-- Navigation Row -->
+<div class="top-text">
+  <a href="index.html">Home</a>
+  <a href="how-to-copy.html">How To Copy Rehan School</a>
+  <a href="video-tours.html">Video Tours</a>
+  <a href="facilitators.html">Facilitators</a>
+  <a href="curriculum.html">Curriculum</a>
+  <a href="videos.html">Videos</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="faqs.html">FAQs</a>
+</div>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="feature-card">
-                <i class="fas fa-book-open feature-icon"></i>
-                <h3>Academic Excellence</h3>
-                <p>Our curriculum is designed to challenge students and foster critical thinking skills.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-users feature-icon"></i>
-                <h3>Dedicated Faculty</h3>
-                <p>Our teachers are passionate about education and committed to student success.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-microscope feature-icon"></i>
-                <h3>Modern Facilities</h3>
-                <p>State-of-the-art laboratories, libraries, and sports facilities enhance learning.</p>
-            </div>
-        </section>
 
-        <!-- News Section -->
-        <section class="news">
-            <h2 class="section-title">Latest News & Events</h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');"></div>
-                    <div class="news-content">
-                        <div class="news-date">June 15, 2023</div>
-                        <h3>Annual Science Fair Winners</h3>
-                        <p>Congratulations to all participants and winners of our annual science fair showcasing innovative projects.</p>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');"></div>
-                    <div class="news-content">
-                        <div class="news-date">July 5, 2023</div>
-                        <h3>Summer Camp Registration Open</h3>
-                        <p>Registration for our summer enrichment program is now open for students in grades 1-8.</p>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');"></div>
-                    <div class="news-content">
-                        <div class="news-date">August 12, 2023</div>
-                        <h3>New Sports Complex Inauguration</h3>
-                        <p>Join us for the grand opening of our new sports complex with modern facilities for various sports.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Features Section -->
+    <h2>Reasons to Choose Rehan School</h2>
+    <h2>What Makes Rehan School Unique?</h2>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Innovative Curriculum</h3>
+        <p>Rehan School integrates cutting-edge technology and soft skills training, preparing students for future challenges.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>AI-Enabled Education</h3>
+        <p>As the first AI-enabled school in Pakistan, Rehan School offers advanced learning tools that keep students ahead in the digital age.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Holistic Development</h3>
+        <p>Our approach includes modern classrooms, labs, and sports facilities to foster overall growth.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Entrepreneurial Focus</h3>
+        <p>We empower students to earn while learning by developing marketable skills and promoting financial independence.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Community Impact</h3>
+        <p>Founded by Rehan Allahwala, our mission is to end poverty in Pakistan by equipping students with problem-solving skills.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Virtual Accessibility</h3>
+        <p>Explore our campus and facilities through immersive virtual tours available on multiple platforms.</p>
+      </div>
     </div>
 
-    <!-- About Us Page -->
-    <div id="about" class="page">
-        <section class="page-content">
-            <h2>About Rehan School</h2>
-            <p>Founded in 1995, Rehan School has been at the forefront of providing quality education to students from diverse backgrounds. Our mission is to nurture young minds and prepare them for the challenges of tomorrow.</p>
-            
-            <h3>Our Vision</h3>
-            <p>To be a leading educational institution that empowers students to achieve their full potential and become responsible global citizens.</p>
-            
-            <h3>Our Mission</h3>
-            <p>To provide a stimulating learning environment with a challenging curriculum that promotes academic excellence, character development, and lifelong learning.</p>
-            
-            <h3>School Leadership</h3>
-            <p>Our experienced leadership team brings together decades of educational expertise to guide the school's vision and ensure the highest standards of teaching and learning.</p>
-            
-            <h3>Accreditations</h3>
-            <p>Rehan School is fully accredited by the National Educational Board and has received numerous awards for academic excellence and innovation in teaching.</p>
-        </section>
+<!-- About Us Section -->
+<section class="about">
+  <div class="about-container">
+    <!-- Left side image box -->
+    <div class="about-image">
+      <!-- ✅ Replace with your About.jpg -->
+      <img src="About.jpg" alt="About Rehan School">
     </div>
 
-    <!-- Academics Page -->
-    <div id="academics" class="page">
-        <section class="page-content">
-            <h2>Academic Programs</h2>
-            <p>At Rehan School, we offer a comprehensive curriculum designed to challenge students and foster a love for learning. Our programs are tailored to meet the needs of students at different stages of their educational journey.</p>
-            
-            <h3>Elementary School</h3>
-            <p>Our elementary program focuses on building strong foundations in literacy, numeracy, and social skills through engaging, hands-on learning experiences.</p>
-            
-            <h3>Middle School</h3>
-            <p>The middle school curriculum challenges students with advanced coursework while providing support as they navigate the transition to more independent learning.</p>
-            
-            <h3>High School</h3>
-            <p>Our college-preparatory high school program offers a wide range of Advanced Placement courses and extracurricular opportunities to prepare students for higher education.</p>
-            
-            <h3>Special Programs</h3>
-            <p>We offer specialized programs in STEM, arts, and languages to cater to diverse interests and talents.</p>
-        </section>
+    <!-- Right side text -->
+    <div class="about-text">
+      <h2>About Us</h2>
+      <h3>Why Rehan School?</h3>
+      <p>
+        Thank you for your inquiry about Rehan School Korangi Campus where our aim 
+        and mission is to help your child become an expert in problem-solving and 
+        earn Rs. 25,000 per month from freelancing which we will teach them.
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* About Us Section */
+.about {
+  padding: 60px 20px;
+  background: #f9fbff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Image box */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;   /* controls width */
+  height: 350px;      /* makes it long */
+  object-fit: cover;  /* crops image nicely */
+  border-radius: 30px; /* rounded long box */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Text box */
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  color: #2c5aa0;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2c5aa0;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1b3d70;
+}
+
+/* Stats Section */
+.stats {
+  background: #f9fbff;
+  padding: 60px 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: white;
+  color: #2c5aa0;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.stat-box p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2 class="testimonials-title">What Our Visitors Say?</h2>
+
+  <div class="testimonial-box">
+    <div class="testimonial-header">
+      <img src="Shannon Lovgren.jpg" alt="Shannon Lovgren">
+      <div class="testimonial-info">
+        <h4>Shannon Lovgren</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      “Founded by Rehan Allahwala, Rehan School Korangi Campus redefines education 
+      with a focus on entrepreneurship and sustainability. Themed rooms, gender 
+      equality in leadership, and a dynamic curriculum set the stage for innovation.”
+    </p>
+  </div>
+
+  <div class="testimonial-box">
+    <div class="testimonial-header">
+      <img src="Dan Ulin.jpg" alt="Dan Ulin">
+      <div class="testimonial-info">
+        <h4>Dan Ulin</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      “Rehan School is simply outstanding! From the space-themed principal’s office 
+      to the innovative ‘Maker and Breaker Space,’ this school is a beacon of creativity. 
+      With a focus on entrepreneurship and technology in the ‘Future Navigators Room,’ 
+      Rehan School is shaping tomorrow’s leaders.”
+    </p>
+  </div>
+
+  <div class="testimonial-box">
+    <div class="testimonial-header">
+      <img src="Inge Urbancic.jpg" alt="Inge Urbancic">
+      <div class="testimonial-info">
+        <h4>Inge Urbancic</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      “Rehan School Korangi Campus: Empowering students through technology to earn 
+      $500 monthly, promoting UN’s Sustainable Development Goals. Daily yoga, tree 
+      planting, and networking with global experts.”
+    </p>
+  </div>
+
+</section>
+
+<style>
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 0;
+  background: #f9fbff;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2c5aa0;
+}
+
+/* Long Testimonial Cards */
+.testimonial-box {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 95%;          /* take almost full width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header with avatar + name */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.testimonial-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-info h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c5aa0;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Review text */
+.testimonial-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+}
+</style>
+<!-- Featured Latest Article Section -->
+<section class="featured-latest-article">
+  <div class="section-title">
+    <h2>Latest Articles</h2>
+    <p>Let’s Check Out All Our Latest News</p>
+  </div>
+
+  <div class="article-container">
+    <!-- Featured Article -->
+    <div class="article-box">
+      <div class="article-image">
+        <img src="no.jpg" alt="Bold Award 2024">
+      </div>
+      <div class="article-text">
+        <span class="article-date">March 23, 2024</span>
+        <h3>Rehan School Pakistan Awarded the Bold Award 2024 for Its Groundbreaking Social Impact</h3>
+        <p>
+          Venice, Italy – In a landmark achievement, Rehan School Pakistan has been 
+          honored with the prestigious Bold Award 2024 in the Boldest Social Impact 
+          category, recognizing its pioneering work in education and sustainability.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
     </div>
 
-    <!-- Admissions Page -->
-    <div id="admissions" class="page">
-        <section class="page-content">
-            <h2>Admissions Process</h2>
-            <p>Thank you for your interest in Rehan School. We welcome applications from students who are eager to learn and contribute to our school community.</p>
-            
-            <h3>Application Steps</h3>
-            <ol>
-                <li>Submit an online inquiry form</li>
-                <li>Attend a virtual or in-person tour</li>
-                <li>Complete the application form</li>
-                <li>Submit required documents</li>
-                <li>Schedule a student assessment</li>
-                <li>Family interview</li>
-                <li>Receive admission decision</li>
-            </ol>
-            
-            <h3>Tuition and Financial Aid</h3>
-            <p>We believe in making quality education accessible. Need-based financial aid is available for qualifying families.</p>
-            
-            <h3>Schedule a Visit</h3>
-            <p>Experience our campus firsthand by scheduling a tour. Contact our admissions office at admissions@rehanschool.net or call (123) 456-7890.</p>
-        </section>
+    <!-- List of other articles on right side -->
+    <div class="latest-articles-list">
+      <div class="article-item">
+        <span class="article-date">January 13, 2020</span>
+        <h4>A Simple Guide to Design Thinking</h4>
+      </div>
+      <div class="article-item">
+        <span class="article-date">January 13, 2020</span>
+        <h4>Web Design Trends for 2020</h4>
+      </div>
+      <div class="article-item">
+        <span class="article-date">January 13, 2020</span>
+        <h4>5 UX Principles for Creating a Great Website</h4>
+      </div>
+      <div class="view-all">
+        <a href="#" class="btn">View All Articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.featured-latest-article {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: #f4f7fb;
+  text-align: left;
+}
+
+.featured-latest-article .section-title h2 {
+  font-size: 28px;
+  color: #2c5aa0;
+  margin-bottom: 5px;
+}
+
+.featured-latest-article .section-title p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.article-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Featured Article */
+.article-box {
+  flex: 2; /* takes more space */
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 350px;
+}
+
+.article-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.article-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.article-text {
+  flex: 1;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.article-text h3 {
+  font-size: 20px;
+  color: #2c5aa0;
+  margin-bottom: 12px;
+}
+
+.article-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.article-text .btn {
+  padding: 8px 18px;
+  background-color: #2c5aa0;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+
+.article-text .btn:hover {
+  background-color: #1b3d70;
+}
+
+/* Latest articles list */
+.latest-articles-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.article-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.article-item .article-date {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.article-item h4 {
+  font-size: 16px;
+  color: #2c5aa0;
+  margin: 0;
+}
+
+.view-all {
+  margin-top: 10px;
+}
+
+.view-all .btn {
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .article-container {
+    flex-direction: column;
+  }
+
+  .article-box {
+    max-height: none;
+  }
+
+  .article-image img {
+    height: 300px;
+  }
+}
+</style>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Mission & Vision -->
+    <div class="footer-col">
+      <h3>Mission & Vision</h3>
+      <p>
+        Our mission is to educate and mentor the next generation of innovative leaders 
+        within 10 years, under the direct supervision of Rehan Allahwala. 
+        We aim to equip our students with the academic foundation and real-world skills 
+        to become not only future Nobel laureate contenders but also successful entrepreneurs 
+        who can tackle the world’s most pressing issues.
+      </p>
     </div>
 
-    <!-- Campus Life Page -->
-    <div id="campus" class="page">
-        <section class="page-content">
-            <h2>Campus Life</h2>
-            <p>At Rehan School, education extends beyond the classroom. We offer a vibrant campus life with numerous activities, clubs, and sports programs.</p>
-            
-            <h3>Student Activities</h3>
-            <p>From robotics club to debate team, students have opportunities to explore their interests and develop new skills.</p>
-            
-            <h3>Athletics</h3>
-            <p>Our sports programs promote teamwork, discipline, and healthy competition. We offer soccer, basketball, swimming, track and field, and more.</p>
-            
-            <h3>Arts Programs</h3>
-            <p>Students can participate in various arts programs including music, theater, visual arts, and dance.</p>
-            
-            <h3>Community Service</h3>
-            <p>We believe in giving back to the community. Our students participate in various service projects throughout the year.</p>
-        </section>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Facilitators</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
     </div>
 
-    <!-- Contact Page -->
-    <div id="contact" class="page">
-        <section class="page-content">
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you. Reach out to us with any questions or to schedule a visit.</p>
-            
-            <div class="contact-info">
-                <h3>Rehan School</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</p>
-                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                <p><i class="fas fa-envelope"></i> info@rehanschool.net</p>
-            </div>
-            
-            <h3>Send us a Message</h3>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Your Message" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <p>R554+WF9, Sector 50 C Korangi, Karachi</p>
+      <p>Opp PAF Falcon, KAECHS Block 6, Shaheed e Millat Road, Khi.</p>
+      <p>Seri Chowk, Near Arqam School, Bank Colony Phulgran, Barakahu, Isb.</p>
+      <p><strong>UAN:</strong> +92 304 111 6044</p>
+      <p><strong>Email:</strong> info@rehanschool.net</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Rehan School</h3>
-                <p>Providing quality education since 1995. Our mission is to nurture young minds and prepare them for future challenges.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="#" data-page="home">Home</a>
-                    <a href="#" data-page="about">About Us</a>
-                    <a href="#" data-page="academics">Academics</a>
-                    <a href="#" data-page="admissions">Admissions</a>
-                    <a href="#" data-page="campus">Campus Life</a>
-                    <a href="#" data-page="contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Information</h3>
-                <div class="footer-contact">
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope"></i> info@rehanschool.net</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Rehan School. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Social + YouTube -->
+    <div class="footer-col">
+      <h3>Subscribe to our YouTube channels</h3>
+      <p>
+        Korangi campus: 
+        <a href="https://YouTube.com/@rehanschoolKorangicampus" target="_blank">
+          @rehanschoolKorangicampus
+        </a>
+      </p>
+      <p>
+        Munawwar campus: 
+        <a href="https://youtube.com/@rehanschoolmunawwarcampus" target="_blank">
+          @rehanschoolmunawwarcampus
+        </a>
+      </p>
+      <h3>Follow Us</h3>
+      <div class="socials">
+        <a href="#" class="social-btn">Facebook</a>
+        <a href="#" class="social-btn">Instagram</a>
+      </div>
+    </div>
 
-    <script>
-        // Navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const navToggle = document.getElementById('navToggle');
-            const navMenu = document.getElementById('navMenu');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const footerLinks = document.querySelectorAll('.footer-links a');
-            const pages = document.querySelectorAll('.page');
-            
-            // Toggle mobile menu
-            navToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('show');
-            });
-            
-            // Function to change page
-            function changePage(pageId) {
-                pages.forEach(page => {
-                    page.classList.remove('active-page');
-                });
-                document.getElementById(pageId).classList.add('active-page');
-                
-                // Close mobile menu after selection
-                navMenu.classList.remove('show');
-                
-                // Scroll to top
-                window.scrollTo(0, 0);
-            }
-            
-            // Add event listeners to navigation links
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const pageId = this.getAttribute('data-page');
-                    changePage(pageId);
-                });
-            });
-            
-            // Add event listeners to footer links
-            footerLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const pageId = this.getAttribute('data-page');
-                    changePage(pageId);
-                });
-            });
-            
-            // Form submission
-            const contactForm = document.querySelector('.contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message. We will get back to you soon!');
-                    contactForm.reset();
-                });
-            }
-        });
-    </script>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Rehan School. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<style>
+.footer {
+  background: #2c5aa0;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-col p, 
+.footer-col ul, 
+.footer-col a {
+  font-size: 14px;
+  color: #eee;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover {
+  color: #ffd700;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  background: #fff;
+  color: #2c5aa0;
+  border-radius: 4px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-btn:hover {
+  background: #ffd700;
+  color: #2c5aa0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+  
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </body>
 </html>
